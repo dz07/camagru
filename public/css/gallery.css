@@ -1,0 +1,213 @@
+  .gallery {
+    /* position: relative; */
+    max-width: 650px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+  }
+
+  /* Gallery picture */
+
+  .gallery-picture {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFF;
+    display: block;
+    /* border: 1px solid black; */
+  }
+
+  .header-picture {
+    position: relative;
+    height: 50px;
+    padding-top: 2px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    /* Background color */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    background-color: #FFFFFF;
+  }
+
+  .footer-picture {
+    position: relative;
+    height: 50px;
+    z-index: 1;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    /* Background color */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    background-color: #FFFFFF;
+  }
+
+  /* Gallery profile picture */
+
+  /* --> Picture owner */
+  .thumbnail {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 5px;
+    overflow: hidden;
+  }
+
+  .thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+
+  .thumbnail img.portrait {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Gallery picture framework */
+
+  .gallery-username {
+    position: relative;
+    top: -32px;
+    left: 60px;
+  }
+
+  .like-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+  .like-icon:hover {
+    cursor: pointer;
+  }
+
+  .like-text {
+    position: relative;
+    top: -17px;
+    font-size: 20px;
+  }
+
+  .open-comments{
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 1px solid white;
+    top: 12.5px;
+    right: 9px;
+    font-size: 20px;
+    z-index: -1;
+  }
+
+  button:focus {
+    outline: 0;
+  }
+
+  .open-comments:hover {
+    cursor: pointer;
+    color: #aaaaaa;
+  }
+
+  /* Comments area */
+  .comments-picture {
+    visibility: hidden;
+    display: none;
+    background-color: #FCFCFC;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    /* Shadow */
+    background-color: rgba(255,255,255,0.85);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  }
+
+  .one-comment {
+    position: relative;
+    left: 48%;
+    padding: 0px;
+    transform: translateX(-50%);
+    word-wrap: break-word;
+    word-spacing: nowrap;
+    margin: 0px 2% 1px 2%;
+  }
+  .comment-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+  }
+
+  .new-comment {
+    position: relative;
+    border-top: 1px solid grey;
+    margin: 2%;
+    padding-top: 5px;
+    height: 75px;
+  }
+  .content-comment {
+    position: relative;
+    left: -7%;
+    height: 50px;
+    max-width: 500px;
+    width: 85%;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    padding: 5px;
+    border: none;
+  }
+  .put-comment {
+    position: absolute;
+    text-align: center;
+    display: block;
+    right: 12.5px;
+    top: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: none;
+    background-image: url("/public/pictures/send-comment-success-1-128.png");
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: center;
+  }
+  .put-comment:hover {
+    background-image: url("/public/pictures/send-comment-success-2-128.png");
+    cursor: pointer;
+  }
+  input:focus {
+    outline: 0;
+  }
+  textarea:focus {
+    outline: 0;
+  }
+
+  /* -- Delete Picture -- */
+
+  .delete-picture {
+    position: absolute;
+    height: 30px;
+    top: 11px;
+    right: 11px;
+    border: 2px solid white;
+  }
+  .delete-picture:hover {
+    cursor: pointer;
+    border: 2px solid #FF5752;
+    border-radius: 100%;
+  }
+
+  @media screen and (max-width: 500px) {
+    .content-comment {
+      width: 75%;
+    }
+    .put-comment {
+      right: 0px;
+    }
+  }
